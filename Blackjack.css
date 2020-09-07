@@ -1,0 +1,118 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-image: linear-gradient(left, #020, green 20%, green 80%, #020);
+	background-image: -moz-linear-gradient(left, #020, green 20%, green 80%, #020);
+	background-image: -webkit-linear-gradient(left, #020, green 20%, green 80%, #020);
+	background-image: -ms-linear-gradient(left, #090, #090);
+	/*min-height: 100vh;*/
+	width: 100%;
+}
+.main {
+	min-height: 93vh;
+}
+ul {
+	padding-left: 20px;
+}
+
+#left{
+	padding: 15px 0;
+	float: left;
+	max-width: 15%;
+	color: gold;
+}
+#left h3 {
+	padding-left: 15px;
+}
+#right{
+	padding-top: 30px;
+	padding-right: 5px;
+	float: right;
+	max-width: 15%;
+	color: gold;
+}
+
+img {
+	height: 130px;
+	margin-left: 5px;
+	margin-top: 5px;
+}
+
+.container {
+	background-color: rgba(55, 55, 55, 0.4);
+	width: 62%;
+	padding-bottom: 10vh;
+}
+
+.flex-box-blackjack {
+	flex: 1;
+	height: 320px;
+}
+
+.score-box {
+	border: 1px solid black;
+	flex: 1;
+	margin-bottom: 10px;
+}
+
+#you, #computer{
+	height: 88%;
+	overflow: auto;
+}
+
+#buttons {
+	padding-bottom: 5px;
+}
+
+th, td {
+	padding: 5px;
+	border: 1px solid black;
+	background-color: rgba(25, 25, 25, 0.2);
+}
+
+p {
+	float: left;
+}
+#message {
+	float: none;
+}
+
+.btn {
+	display:inline-block;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+table {
+	display: inline-block;
+}
+
+footer {
+	font-size: smaller;
+}
+
+.sm-screen {
+	display: none;
+}
+
+@media screen and (max-width: 1020px) {
+	#left, #right, .container {
+		display: none;
+	}
+
+	.sm-screen {
+		display: block;
+		width: 100% !important;
+		height: 100vh !important;
+		position: relative;
+	}
+	.sm-screen-text {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
+	}
+	footer {
+		position: static;
+	}
+}
